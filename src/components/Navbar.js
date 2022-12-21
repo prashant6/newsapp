@@ -20,7 +20,6 @@ export default function Navbar() {
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="/sports">Sports</Link></li>
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="/technology">Technology</Link></li>
 
-              <li className="nav-item"><Link className="nav-link" to="/About">About</Link></li>
             </ul>
           </div>
         </div>
