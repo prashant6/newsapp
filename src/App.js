@@ -25,7 +25,7 @@ export default function App() {
                 <Navbar />
 
                 <Routes>
-                    <Route path='/' element={<News setProgress={setProgress} key='top' apiKey={apiKey} pageSize={pageSize} country='in' category='top' />} />
+                    <Route path='/newsapp' element={<News setProgress={setProgress} key='top' apiKey={apiKey} pageSize={pageSize} country='in' category='top' />} />
                     <Route path='/business' element={<News setProgress={setProgress} key='business' apiKey={apiKey} pageSize={pageSize} country='in' category='business' />} />
                     <Route path='/entertainment' element={<News setProgress={setProgress} key='entertainment' apiKey={apiKey} pageSize={pageSize} country='in' category='entertainment' />} />
                     <Route path='/health' element={<News setProgress={setProgress} key='health' apiKey={apiKey} pageSize={pageSize} country='in' category='health' />} />

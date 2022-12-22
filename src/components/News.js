@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import NewsItem from './NewsItem'
 import Spinner from './Spinner';
 import PropTypes from 'prop-types'
@@ -45,7 +45,7 @@ export default function News(props) {
 
     return (
         <>
-            <h1 className='text-center' style={{ marginTop: "80px" }}>NewsMonkey - {props.category === 'general' ? 'Home' : props.category.charAt(0).toUpperCase() + props.category.slice(1)}</h1>
+            <h1 className='text-center' style={{ marginTop: "80px" }}>NewsIQ- {props.category === 'general' ? 'Home' : props.category.charAt(0).toUpperCase() + props.category.slice(1)}</h1>
 
             {loading && <Spinner />}
             <InfiniteScroll
@@ -72,7 +72,7 @@ export default function News(props) {
 
 News.defaultProps = {
     country: 'in',
-    category: 'sports'
+    category: 'top'
 }
 
 News.propTypes = {
